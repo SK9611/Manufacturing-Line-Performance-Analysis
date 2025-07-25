@@ -10,13 +10,13 @@ Data
 
 The dataset consists of multiple tables, each capturing different aspects of manufacturing performance. The data was sourced from Maven Analytics Excel dataset and structured into fact and dimension tables to enable efficient analysis. The dataset includes detailed production and downtime records, capturing :
 - Line Productivity (Fact Table)
- - Captures batch production details, including efficiency and operator performance.
+  - Captures batch production details, including efficiency and operator performance.
 - Products (Dimension Table)
- - Stores product specifications.
+  - Stores product specifications.
 - Line Downtime (Fact Table)
- - Records machine downtime events by batch, including the cause of the issue.
+  - Records machine downtime events by batch, including the cause of the issue.
 - Downtime Factors (Dimension Table)
- - Categorizes downtime reasons and identifies operator errors.
+  - Categorizes downtime reasons and identifies operator errors.
 
 Process
 
@@ -52,7 +52,7 @@ The data model consists of multiple fact tables, ensuring a clear separation bet
 - Fact_Line_Downtime links to :
  - Dim_Downtime_Factors (via Factor)
  - Fact_Line_Productivity (via Batch)
- - 
+   
 Relationships were established between these tables, ensuring smooth filtering and drill-down analysis. The fact tables connect with the dimension tables using one-to-many relationships to ensure efficient querying and effective aggregation.
 
 Design
@@ -64,7 +64,7 @@ The Line Productivity Dashboard provides stakeholders with key insights into man
 - Optimizes Resource Allocation – By identifying slowest products and operators.
 - Improves Decision-Making – By providing data-driven insights on productivity trends.
 - Enhances Workforce Efficiency – By tracking operator performance and training needs.
-- 
+  
 2. Line Downtime
 
 The Line Downtime Dashboard provides stakeholders with insights into the factors contributing to production downtime, helping them identify inefficiencies, improve machine reliability, and enhance operator performance. This dashboard can helps :
