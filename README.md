@@ -29,10 +29,10 @@ Data Cleaning
 Data Transformation
 - Transformed Line Downtime data using Power Query's Unpivot Column function to converted downtime factor columns into a single Factor column and downtime minutes into a single Downtime (mins) column.
 - Rename tables for clarity and consistency :
- - Line Productivity → Fact_Line_Productivity
- - Products → Dim_Products
- - Line Downtime → Fact_Line_Downtime
- - Downtime Factors → Dim_Downtime_Factors
+  - Line Productivity → Fact_Line_Productivity
+  - Products → Dim_Products
+  - Line Downtime → Fact_Line_Downtime
+  - Downtime Factors → Dim_Downtime_Factors
 - A Dim_Date table was generated to facilitate time-based analysis.
 
 Calculated Columns and Measures
@@ -68,7 +68,6 @@ The Line Productivity Dashboard provides stakeholders with key insights into man
 2. Line Downtime
 
 The Line Downtime Dashboard provides stakeholders with insights into the factors contributing to production downtime, helping them identify inefficiencies, improve machine reliability, and enhance operator performance. This dashboard can helps :
-
 - Minimizes Production Loss – By addressing top downtime contributors.
 - Improves Workforce Efficiency – By identifying operator-related inefficiencies.
 - Enhances Machine Reliability – By focusing on recurring failure patterns.
