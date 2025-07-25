@@ -47,11 +47,11 @@ Calculated columns and measures were added to the respective fact tables :
 The data model consists of multiple fact tables, ensuring a clear separation between production efficiency and downtime analysis. The key relationships are :
 
 - Fact_Line_Productivity links to :
- - Dim_Products (via Product)
- - Dim_Date (via Date)
+  - Dim_Products (via Product)
+  - Dim_Date (via Date)
 - Fact_Line_Downtime links to :
- - Dim_Downtime_Factors (via Factor)
- - Fact_Line_Productivity (via Batch)
+  - Dim_Downtime_Factors (via Factor)
+  - Fact_Line_Productivity (via Batch)
    
 Relationships were established between these tables, ensuring smooth filtering and drill-down analysis. The fact tables connect with the dimension tables using one-to-many relationships to ensure efficient querying and effective aggregation.
 
